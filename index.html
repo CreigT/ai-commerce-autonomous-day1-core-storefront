@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Commerce Hub - Autonomous Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🤖 AI Commerce Hub</h1>
+        <p>Fully Autonomous AI-Powered Store - No Human Operators Needed</p>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#ai-agent">Ask AI Agent</a>
+            <a href="#paywall">Premium Access</a>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Welcome to the Future of Commerce</h2>
+            <p>This store is managed entirely by AI agents. Browse, buy, and get support 24/7.</p>
+            <button onclick="document.getElementById('ai-agent').scrollIntoView()">Talk to AI Support</button>
+        </section>
+        <section id="products">
+            <h2>Featured Products (AI Curated)</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <h3>AI Productivity Toolkit</h3>
+                    <p>$49 - Instant digital download</p>
+                    <button class="buy-btn" data-price="49" data-product="AI Productivity Toolkit">Buy Now</button>
+                </div>
+                <div class="product">
+                    <h3>Autonomous Marketing Agent Access</h3>
+                    <p>$99/month - SaaS subscription</p>
+                    <button class="buy-btn" data-price="99" data-product="Marketing Agent">Subscribe</button>
+                </div>
+                <div class="product">
+                    <h3>Custom AI Store Setup</h3>
+                    <p>$299 - One-time</p>
+                    <button class="buy-btn" data-price="299" data-product="Store Setup">Get Started</button>
+                </div>
+            </div>
+        </section>
+        <section id="ai-agent">
+            <h2>AI Customer Support Agent</h2>
+            <div id="chat">
+                <div id="messages"></div>
+                <input type="text" id="user-input" placeholder="Ask about products, refunds, or anything...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+            <p><em>This is a simple demo agent. In full system, powered by LLM with full context.</em></p>
+        </section>
+        <section id="paywall">
+            <h2>Premium Features (Reasonable Paywall)</h2>
+            <p>Unlock advanced AI agents, analytics, and automation for $19/month.</p>
+            <button class="buy-btn" data-price="19" data-product="Premium Access">Upgrade Now</button>
+            <p>Add your Stripe Checkout links or env variables as needed.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Legal Owner: [Your Name] | Emergency Override Only | Powered by AI Agents</p>
+        <p>&copy; 2026 Autonomous AI Commerce. Production ready for Vercel.</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
